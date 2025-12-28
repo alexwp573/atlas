@@ -93,7 +93,7 @@ public class Connection implements Runnable, TextUserInterface.Listener{
 			URL url = new URL("https://checkip.amazonaws.com");
 			br = new BufferedReader(new InputStreamReader(url.openStream()));
 		} catch (Exception e){ throw e;} return br.readLine();}
-	private void connect(){
+	private void listen(){
 		try{this.serverSocket = new ServerSocket(this.port);
 			this.logger.info("Server is listening on port: " + this.port);
 			while(!Thread.currentThread().isInterrupted()){
@@ -101,7 +101,7 @@ public class Connection implements Runnable, TextUserInterface.Listener{
 				this.logger.info("Client connected: " + clientSocket.getInetAddress().getHostAddress());}}
 		catch(IOException ioe){ if(this.serverSocket != null && !this.serverSocket.isClosed()) this.logger.errr(ioe.toString());}
 		finally{this.close();}}
-	private void listen(){
+	private void connect(){
 		try{this.clientSocket = new Socket(ip, port);
 			this.inStream = this.clientSocket.getInputStream();
 			this.outStream = this.clientSocket.getOutputStream();
