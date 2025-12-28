@@ -84,7 +84,7 @@ public class Connection implements Runnable, TextUserInterface.Listener{
 	public void run(){
 		if(this.ip != null && this.port != -1) this.connect();
 		else if(this.ip == null && this.port != -1) this.listen();
-		else if(this.ip == null && this.port == -1) this.tui.addInListener(this);}
+		else if(this.ip == null && this.port == -1){this.logger.addTarget(Logger.Target.CONSOLE); this.tui.addInListener(this);}}
 	
 	private String myLIP() throws UnknownHostException{
 		try{ return InetAddress.getLocalHost().getHostAddress();} catch(UnknownHostException e){throw e;}}
