@@ -98,7 +98,7 @@ public class Connection implements Runnable, TextUserInterface.Listener{
 			this.logger.info("Server is listening on port: " + this.port);
 			while(!Thread.currentThread().isInterrupted()){
 				Socket clientSocket = serverSocket.accept();
-				this.logger.info("New client connected: " + clientSocket.getInetAddress().getHostAddress());}}
+				this.logger.info("Client connected: " + clientSocket.getInetAddress().getHostAddress());}}
 		catch(IOException ioe){ if(this.serverSocket != null && !this.serverSocket.isClosed()) this.logger.errr(ioe.toString());}
 		finally{this.close();}}
 	private void listen(){
