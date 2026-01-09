@@ -1,0 +1,7 @@
+string name Book
+set fablehaven {
+	string name Fablehaven 
+	int pagesCount 250 }
+set hyperversum {
+	string name Hyperversum
+	int pagesCount 600 }

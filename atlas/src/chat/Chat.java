@@ -1,6 +1,8 @@
-package atlas.module;
+package atlas.chat;
 
+import atlas.Engine;
 import atlas.tool.*;
+import atlas.tool.TextUserInterface.Listener;
 
 public class Chat implements Listener{
 
@@ -16,5 +18,5 @@ public class Chat implements Listener{
 
 		// ------------
 		// CONSTRUCTORS
-		public Chat(Engine engine){this.engine = engine; this.tui = this.enigine.getTui();}
+		public Chat(Engine engine){this.engine = engine; this.tui = this.engine.getTui();}
 }

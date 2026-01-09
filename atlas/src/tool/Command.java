@@ -44,7 +44,6 @@ public class Command{
 		for(int i = 0; i < this.hasOptions(); i++){stringToReturn += this.getOptions().get(i); stringToReturn += this.getValues().get(i);}
 		return stringToReturn;
 	}
-	
 	public boolean amoCheck(int a, int m, int o, int v){
 		if(this.arguments.size() >= a && this.modificators.size() >= m && this.options.size() >= o) return true; return false;
 	}

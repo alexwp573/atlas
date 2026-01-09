@@ -1,0 +1,32 @@
+string name Weapon
+set skin { 
+	set deathBringer {
+		string name { Death Bringer }
+		string rarity Mystic }
+	set theBrightest {
+		string name { The Brightest }
+		string rarity Mystic } }
+set ak47 {
+	string name { AK-47 }
+	string type Carabine
+	string magazine capacity 25
+	float basic value 2000.00
+	bool skinable true }
+set deseartEagle {
+	string name { Deseart Eagle }
+	string type Pistol
+	string magazine capacity 7
+	float basic value 2500.00
+	bool skinable true }
+set m4a4 {
+	string name { M4-A4 }
+	string type Carabine
+	string magazine capacity 30
+	float basic value 1500.00
+	bool skinable true }
+set glock14 {
+	string name { Glock 14 }
+	string type Pistol
+	string magazine capacity 15
+	float basic value 1000.00
+	bool skinable true }

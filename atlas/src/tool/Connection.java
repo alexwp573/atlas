@@ -22,6 +22,13 @@ import java.net.UnknownHostException;
 
 public class Connection implements Runnable, TextUserInterface.Listener{
 	
+	private static void printHelp(){
+		Debuger.pl("ip\n\tprints your IP");
+		Debuger.pl("connect\n\tconnects to the other ATLAS computer at :ip -port PORT");
+		Debuger.pl("disconnect\n\tdisconnects from all ATLAS computers");
+		Debuger.pl("listen\n\tlistens on -port PORT");
+	}
+	
 	private static DataStruct.Table<Integer> portsOccupied = new DataStruct().new Table<>();
 		public static boolean isPortOccupied(int port){
 			for(int i = 0; i < Connection.portsOccupied.size(); i++){
@@ -47,6 +54,7 @@ public class Connection implements Runnable, TextUserInterface.Listener{
 	public String getName(){return "Connection";}
 	public void execute(Command cmnd){
 		switch(cmnd.getCommand()){
+			case "h": case "help": Connection.printHelp(); break;
 			case "ip": try{
 					Debuger.pl("Getting your IPs...");
 					this.myLIP = this.myLIP();

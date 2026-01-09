@@ -1,0 +1,37 @@
+set rarity {
+	set plain {
+		string name Plain
+		int valueMulti 1
+		string color Grey
+		int amountInBox 90000 }
+	set common {
+		string name Common
+		int valueMulti 1
+		string color Bronze
+		int amountInBox 9000 }
+	set rare {
+		string name Rare
+		int valueMulti 2
+		string color Blue
+		int amountInBox 900 }
+	set epic {
+		string name Epic
+		int valueMulti 3
+		string color Purple
+		int amountInBox 90 }
+	set legendary {
+		string name Legendary
+		int valueMulti 5
+		string color Gold
+		int amountInBox 9 }
+	set mystic {
+		string name Mystic
+		int valueMulti 8
+		string color Silver
+		int amountInBox 1 } }
+
+[
+set quality {
+	int minQuality 1
+	int maxQuality 100 }
+]

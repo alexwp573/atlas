@@ -1,0 +1,31 @@
+string name { League Of Legends Statue }
+set tristana {
+	string name Tristana
+	string range distance
+	string type marksman
+	string hardness easy
+	int basicValue 500
+	set skins {
+		set dragonTrainerTristana {
+			string name { Dragon Trainer Tristana }
+			string quality Legendary } } }
+set masterYi {
+	string name { Master Yi }
+	string range melee
+	string type assassin
+	string hardness easy
+	int basicValue 500 }
+	set skins {
+		set cosmicMasterYi { 
+			string name { Cosmic Master Yi }
+			string quality Epic } }
+set shen {
+	string name Shen
+	string range melee 
+	string type tank
+	string hardness medium
+	int basicValue 500
+	set skins {
+		set pulsfireShen {
+			string name { Pulsfire Shen }
+			string quality Epic } } }

@@ -1,8 +1,5 @@
 package atlas;
 
-import atlas.tool.*;
-import atlas.module.TextUserInterface;
-
 public class Atlas{
 	private Engine engine = new Engine();
 	private Thread engineThread = new Thread(this.engine);

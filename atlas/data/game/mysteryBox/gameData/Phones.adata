@@ -1,0 +1,28 @@
+string name Phone
+set colorOptions {
+	string black Black
+	string green Red
+	string green Green
+	string blue Blue
+	string green Grey
+	string yellow Yellow
+	string green White }
+set memoryOptions {
+	int 64gb 64 
+	int 128gb 128
+	int 256gb 256
+	int 512gb 512
+	int 1024gb 1024}
+set ramOptions {
+	int 6gb 6
+	int 8gb 8
+	int 10gb 10
+	int 12gb 12
+	int 16gb 16 }
+set sgs10plus {
+	string fullName { Samsung Galaxy S10+ }
+	string brandName Samsung
+	string modelName { Galaxy S10+ }
+	string resolutionName 2K
+	int resolutionX 2560
+	int resolutionY 1440 }
