@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=ATLAS
+Comment=Lifestyle planner and managing
+Exec = atlas
+Icon=/usr/share/atlas/AtlasIcon.png
+Terminal=false
+Categories=Utility;Office;Network
